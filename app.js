@@ -16,24 +16,43 @@
 
 
 
-const matrix1 = [
-  [3, 2, 5],
-  [5, 4, 6],
-  [1, 0, 90],
-];
-const matrix2 = [
-  [7, 2, 1],
-  [5, 9, 2],
-  [1, 0, 19],
-];
+// const matrix1 = [
+//   [3, 2, 5],
+//   [5, 4, 6],
+//   [1, 0, 90],
+// ];
+// const matrix2 = [
+//   [7, 2, 1],
+//   [5, 9, 2],
+//   [1, 0, 19],
+// ];
 
-const result=[]
+// const result=[[]]
 
-for (let i = 0; i < 3; i++) {
-  for (let j = 0; j < 3; j++) {
-   result1 =(matrix1[i][j] + matrix2[i][j]);
-   result.push(result1);
+// for (let i = 0; i < 3; i++) {
+//   for (let j = 0; j < 3; j++) {
+//    result1 =(matrix1[i][j] + matrix2[i][j]);
+//    result.push(result1);
+//   }
+//   // console.log(result)
+// }
+// console.log(result)
+
+
+/////////////   find average using function //////
+
+
+const numbers = [4, 5, 6, 10, 4, 4, 5, 6, 10, 4, 39, 489, 46];
+
+function average(numbers) {
+  let nums = 0;
+  for (let i = 0; i < numbers.length; i++) {
+    nums += numbers[i];
   }
-  // console.log(result)
+  const sum = nums / numbers.length;
+  return sum;
 }
-console.log(result)
+
+const result = average(numbers);
+console.log(result.toFixed(2));
+
